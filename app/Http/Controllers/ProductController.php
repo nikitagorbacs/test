@@ -44,6 +44,7 @@ class ProductController extends Controller
 
     public function getRandomPhotos()
     {
+        // retrieving random photos
         $client = new Client();
 
         $apiKey = 'sl6IRyXj9LopyYIPz7hBdpia1SOVKzSS2BGkdWVwTUs';
@@ -81,6 +82,7 @@ class ProductController extends Controller
 
     public function test(Request $request)
     {
+        // test
         foreach ($request->all() as $key => $value) {
             if (strpos($key, 'quantity') !== false) {
                 return 'hello';
