@@ -12,7 +12,7 @@ class ProductController extends Controller
 {
     public function getAllProducts()
     {
-        // retrieve all products
+        // retrieve all
         $products = Product::all();
 
         return $products;
